@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4a3ebb848a.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Sign.png" class="l">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#Resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <br><span>Swati Tiwari</span></h1>
+                <p>pursuing B.tech in CSE</p>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="swati.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><br>Looking to work in an organization that can provide a variety of opportunities that allow me to expand my skills and knowledge while working towards achieving the organizational goal</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('interests')">Interests</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul class="list1">
+                            <li><span>Pranveer Singh Institute of Technology, Kanpur</span>
+                                <ul class="list2">
+                                    <li>Pursuing B.tech in Computer Science and Engineering(Data Science)</li>
+                                    <li>2021 - 2025</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li><span>Kendriya Vidyalaya New Cantt,Prayagraj</span>
+                                <ul class="list2">
+                                    <li>12th - CBSE</li>
+                                    <li>Completed Higher Secondary Education with Physics, Chemistry and Maths</li>
+                                    <li>July 2021</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li><span>Kendriya Vidyalaya New Cantt,Prayagraj</span>
+                                <ul class="list2">
+                                    <li>10th - CBSE</li>
+                                    <li>May 2019</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul class="list1">
+                            <ul>Programming Languages
+                                <li>C</li>
+                                <li>C++</li>
+                                <li>Python</li>
+                            </ul>
+                            <ul>Web Development
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>BootStrap</li>
+                            </ul>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="interests">
+                        <ul class="list1">
+                            <li>Volley-Ball</li>
+                            <li>Dance</li>
+                            <li>Data Science</li>
+                            <li>Front end development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="certificates">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="certificate-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python(basic)</h2>
+                    <a href="https://www.hackerrank.com/certificates/7e0efc96654d">View Certificate</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bars"></i>
+                    <h2>Problem Solving</h2>
+                    <p>(basic)</p>
+                    <a href="https://www.hackerrank.com/certificates/b83e15efcb8f">View Certificate</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bars"></i>
+                    <h2>Problem Solving</h2>
+                    <p>(intermediate)</p>
+                    <a href="https://www.hackerrank.com/certificates/177151820a38">View Certificate</a>
+                </div>
+                
+            </div>
+            <a href="https://www.linkedin.com/in/swati-tiwari-61a063232/recent-activity/all/" class="btn">Click here for certificates</a>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="myDes.jpeg">
+                    <div class="layer">
+                        <h3>Desktop Assistant</h3>
+                        <p>Created a Desktop assistant(virtual Assistant) using python. It is customize for personal use,which takes user command as input and gives output accordingly</p>
+
+                        <a href="https://github.com/SwatiTiwari11/Desktop-Assistant"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="PORTFOLIO.webp">
+                    <div class="layer">
+                        <h3>My-Portfolio Website</h3>
+                        <p>Created my portfolio website using HTML,CSS,JavaScript which shows my skills, projects, certificates.</p>
+                        <a href="https://swatitiwari11.github.io/My-portfolio/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="https://github.com/SwatiTiwari11?tab=repositories" class="btn">Click here For More</a>
+        </div>
+    </div>
+    <div id="Resume">
+        <div class="container">
+            <a href="Swati's Resume.pdf" class="btn btn2" download="">Click here!! for Resume</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+            
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>swatitiwari110903@gmail.com@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>6386******</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/swatitiwarii/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/swati-tiwari-61a063232/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/SwatiTiwari11"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Thank you <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+</body>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+</html>
